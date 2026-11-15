@@ -1,1 +1,598 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About Us | Minaxi Cake House</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css"></head><body><div id="site-header"></div><main><section class="page-hero"><span class="eyebrow">OUR STORY</span><h1>A little love in<br><em>every layer.</em></h1><p>Thoughtful baking, beautiful details and memories made sweeter.</p></section><section class="story section two-col"><img class="story-img" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Baker preparing pastries"><div><div class="section-kicker">THE HEART BEHIND THE HOUSE</div><h2>Made with heart.<br><em>Shared with joy.</em></h2><p>At Minaxi Cake House, we believe a cake is never just dessert. It is the candle-blowing moment, the surprise smile, the family gathered around a table and the memory everyone takes home.</p><p>We bring care to every bake and creativity to every design. Whether you have a clear idea or just a little inspiration, we're here to make something that feels wonderfully yours.</p><a class="btn btn-dark" href="custom-orders.html">Let's create something sweet</a></div></section><section class="values section"><div class="section-kicker">OUR LITTLE PROMISE</div><h2>Good things are made <em>with care.</em></h2><div class="value-grid"><div><span>01</span><h3>Freshly prepared</h3><p>We focus on freshness and flavour in every order.</p></div><div><span>02</span><h3>Made personal</h3><p>Your occasion, colours and ideas inspire the design.</p></div><div><span>03</span><h3>Details matter</h3><p>We care about the little touches that make a cake special.</p></div></div></section></main><div id="site-footer"></div><script src="./site.js"></script></body></html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>About Us | Minaxi Cake House</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /* ABOUT PAGE */
+
+    .owner-story {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .owner-photo-wrap {
+      position: relative;
+    }
+
+    .owner-photo {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      object-position: center 35%;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .owner-photo-caption {
+      margin-top: 14px;
+      text-align: center;
+      color: #98736b;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .owner-content h2 {
+      margin: 15px 0 22px;
+    }
+
+    .owner-content p {
+      line-height: 1.9;
+      margin-bottom: 17px;
+    }
+
+    .owner-signature {
+      margin-top: 25px;
+      color: #bd8583;
+      font-family: 'Allura', cursive;
+      font-size: 42px;
+    }
+
+    /* BAKING JOURNEY */
+
+    .journey-section {
+      background: #f8f2ed;
+      text-align: center;
+    }
+
+    .journey-section h2 {
+      margin: 12px 0 18px;
+    }
+
+    .journey-description {
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.9;
+    }
+
+    .journey-date {
+      margin: 30px auto 0;
+      padding: 22px;
+      max-width: 260px;
+      border: 1px solid #d9c2b4;
+      background: #fffaf6;
+    }
+
+    .journey-date strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 25px;
+      color: #49332d;
+    }
+
+    .journey-date span {
+      display: block;
+      margin-top: 7px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #98736b;
+    }
+
+    /* CAKE PROMISES */
+
+    .values {
+      text-align: center;
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .value-card {
+      padding: 30px 24px;
+      background: #fbf7f3;
+      border: 1px solid #eee2da;
+      text-align: left;
+    }
+
+    .value-card span {
+      color: #bd8583;
+      font-family: 'Playfair Display', serif;
+      font-size: 25px;
+    }
+
+    .value-card h3 {
+      margin: 15px 0 10px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .value-card p {
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    /* CERTIFICATE */
+
+    .certificate-section {
+      background: #f8f2ed;
+      text-align: center;
+    }
+
+    .certificate-section h2 {
+      margin: 12px 0;
+    }
+
+    .certificate-description {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      line-height: 1.8;
+    }
+
+    .certificate-frame {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #e6d7ca;
+      box-shadow: 0 12px 35px rgba(64,43,38,0.08);
+    }
+
+    .certificate-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .certificate-caption {
+      margin-top: 18px;
+      color: #98736b;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* TERMS AND CONDITIONS */
+
+    .terms-section h2 {
+      margin: 12px 0 30px;
+    }
+
+    .terms-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    .term-item {
+      display: flex;
+      gap: 18px;
+      padding: 20px 22px;
+      background: #fbf7f3;
+      border: 1px solid #eee2da;
+      align-items: flex-start;
+    }
+
+    .term-number {
+      flex: 0 0 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #49332d;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 13px;
+    }
+
+    .term-item h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      margin: 0 0 7px;
+    }
+
+    .term-item p {
+      margin: 0;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .terms-note {
+      margin-top: 25px;
+      padding: 18px;
+      background: #f8f2ed;
+      color: #49332d;
+      line-height: 1.8;
+      font-size: 13px;
+    }
+
+    @media(max-width: 800px) {
+      .owner-story {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .owner-photo {
+        height: 480px;
+      }
+
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 500px) {
+      .owner-photo {
+        height: 400px;
+      }
+
+      .term-item {
+        padding: 16px;
+        gap: 12px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+  <!-- PAGE HERO -->
+
+  <section class="page-hero">
+    <span class="eyebrow">OUR STORY</span>
+
+    <h1>A passion for baking,<br><em>a journey made with love.</em></h1>
+
+    <p>Meet the person behind every lovingly handcrafted creation.</p>
+  </section>
+
+
+  <!-- OWNER INTRODUCTION -->
+
+  <section class="section owner-story">
+
+    <div class="owner-photo-wrap">
+
+      <img
+        class="owner-photo"
+        src="./minaxi.jpeg"
+        alt="Minakshi Shah, founder of Minaxi Cake House"
+      >
+
+      <div class="owner-photo-caption">
+        The heart behind Minaxi Cake House
+      </div>
+
+    </div>
+
+    <div class="owner-content">
+
+      <div class="section-kicker">
+        MEET THE BAKER
+      </div>
+
+      <h2>
+        Hello, I'm Minakshi Shah.<br>
+        <em>A baker by passion.</em>
+      </h2>
+
+      <p>
+        My love for baking has always been close to my heart.
+        What started as a personal passion gradually turned into
+        something truly special. On 10th February 2021, after
+        the lockdown, I began my journey in the world of cakes
+        and baking.
+      </p>
+
+      <p>
+        Based in Raipur Chakla, Ahmedabad Old City, I enjoy
+        creating beautiful cakes with different flavours,
+        styles and designs. I love experimenting with new
+        varieties and bringing fresh ideas to every creation.
+      </p>
+
+      <p>
+        From customised celebration cakes to cookies and
+        brownies, I enjoy making a wide variety of baked
+        treats. Every order gives me an opportunity to learn,
+        experiment and create something memorable.
+      </p>
+
+      <p>
+        Over the years, the love and trust of my customers
+        have made this journey even more meaningful. Many
+        customers return to me for their special occasions,
+        and every new order motivates me to improve my work
+        and explore new designs.
+      </p>
+
+      <p>
+        Even after five years of baking, my excitement for
+        trying something new remains the same. I believe
+        every cake should have its own personality, made
+        with care, creativity and lots of love.
+      </p>
+
+      <div class="owner-signature">
+        With love, Minakshi
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BAKING JOURNEY -->
+
+  <section class="section journey-section">
+
+    <div class="section-kicker">
+      WHERE IT ALL BEGAN
+    </div>
+
+    <h2>
+      Every sweet journey<br>
+      <em>has a beginning.</em>
+    </h2>
+
+    <p class="journey-description">
+      What began with a love for baking on 10th February 2021
+      has grown into a journey filled with creativity,
+      new experiences, loyal customers and countless
+      beautiful cake creations.
+    </p>
+
+    <div class="journey-date">
+      <strong>10 February 2021</strong>
+      <span>THE BEGINNING OF MY BAKING JOURNEY</span>
+    </div>
+
+  </section>
+
+
+  <!-- OUR VALUES -->
+
+  <section class="section values">
+
+    <div class="section-kicker">
+      WHAT MAKES US SPECIAL
+    </div>
+
+    <h2>
+      Every creation is made<br>
+      <em>with a little extra love.</em>
+    </h2>
+
+    <div class="value-grid">
+
+      <div class="value-card">
+        <span>01</span>
+        <h3>Freshness & Flavour</h3>
+        <p>
+          Every creation is prepared with care, with a focus
+          on delicious flavours and a delightful experience.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <span>02</span>
+        <h3>Creative Designs</h3>
+        <p>
+          From simple elegance to personalised celebration
+          cakes, every design starts with your imagination.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <span>03</span>
+        <h3>Customer Love</h3>
+        <p>
+          Your trust, repeat orders and happiness inspire
+          me to keep learning and creating.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BAKER CERTIFICATE -->
+
+  <section class="section certificate-section">
+
+    <div class="section-kicker">
+      MY LEARNING JOURNEY
+    </div>
+
+    <h2>
+      A little achievement,<br>
+      <em>a lot of dedication.</em>
+    </h2>
+
+    <p class="certificate-description">
+      Every step in my baking journey brings new learning
+      and experience. Here's a glimpse of my baking
+      certification and achievements.
+    </p>
+
+    <div class="certificate-frame">
+
+      <img
+        src="./certi.jpeg"
+        alt="Minakshi Shah's baking certificate"
+        loading="lazy"
+      >
+
+    </div>
+
+    <div class="certificate-caption">
+      My baking certificate
+    </div>
+
+  </section>
+
+
+  <!-- TERMS AND CONDITIONS -->
+
+  <section class="section terms-section">
+
+    <div class="section-kicker">
+      BEFORE YOU PLACE AN ORDER
+    </div>
+
+    <h2>
+      Terms & <em>Conditions</em>
+    </h2>
+
+    <div class="terms-list">
+
+      <div class="term-item">
+        <span class="term-number">01</span>
+        <div>
+          <h3>50% Advance Payment</h3>
+          <p>
+            A 50% advance payment is required to confirm
+            and reserve your cake order. The remaining
+            balance must be paid as agreed when the order
+            is completed.
+          </p>
+        </div>
+      </div>
+
+      <div class="term-item">
+        <span class="term-number">02</span>
+        <div>
+          <h3>Eggless Cakes</h3>
+          <p>
+            All cakes prepared at Minaxi Cake House are
+            eggless.
+          </p>
+        </div>
+      </div>
+
+      <div class="term-item">
+        <span class="term-number">03</span>
+        <div>
+          <h3>Delivery Charges</h3>
+          <p>
+            Delivery charges will be calculated separately
+            according to the customer's delivery location.
+          </p>
+        </div>
+      </div>
+
+      <div class="term-item">
+        <span class="term-number">04</span>
+        <div>
+          <h3>Cancellation Policy</h3>
+          <p>
+            Once the cake-making process has started,
+            the order cannot be cancelled and the advance
+            payment will not be refunded. However, the
+            advance amount can be carried forward and
+            reused for a future cake order.
+          </p>
+        </div>
+      </div>
+
+      <div class="term-item">
+        <span class="term-number">05</span>
+        <div>
+          <h3>Minimum Cake Weight</h3>
+          <p>
+            Cake orders start from 250 grams. Different
+            varieties and types of cakes are available
+            according to your requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="term-item">
+        <span class="term-number">06</span>
+        <div>
+          <h3>Custom Cake Pricing</h3>
+          <p>
+            Prices depend on the selected cake design,
+            size, flavour, decoration and customisation.
+            The final price will be shared before
+            confirming your order.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="terms-note">
+      <strong>A little request:</strong>
+      Please place your cake order at least one day in
+      advance. Customised designs may require additional
+      preparation time.
+    </div>
+
+  </section>
+
+
+  <!-- FINAL CTA -->
+
+  <section class="section values">
+
+    <div class="section-kicker">
+      LET'S CELEBRATE SOMETHING SPECIAL
+    </div>
+
+    <h2>
+      Your celebration deserves<br>
+      <em>a cake made with love.</em>
+    </h2>
+
+    <p>
+      Have an idea in mind? I'd love to create something
+      special for your occasion.
+    </p>
+
+    <a class="btn btn-dark" href="custom-orders.html">
+      Order Your Custom Cake ↗
+    </a>
+
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="site.js"></script>
+
+</body>
+</html>
