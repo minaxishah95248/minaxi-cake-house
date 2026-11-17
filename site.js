@@ -128,8 +128,7 @@ if (header) {
     <header class="site-header">
 
       <a class="brand" href="index.html">
-        <strong>Minaxi Cake House</strong>
-        <small>BAKED WITH LOVE</small>
+        <img src="./minaxi-logo.png" alt="Minaxi Cake House">
       </a>
 
       <button class="menu-toggle"
