@@ -178,6 +178,74 @@
       box-shadow: 0 0 0 3px rgba(189, 133, 131, 0.10);
     }
 
+    .contact-captcha {
+      margin-top: 22px;
+      padding: 15px 18px;
+      border: 1px solid #e9ddd5;
+      border-radius: 4px;
+      background: #fdfaf7;
+    }
+
+    #contact-inquiry-form .contact-captcha-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0;
+      color: #49332d;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    #contact-inquiry-form .contact-captcha input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      display: grid;
+      flex: 0 0 22px;
+      place-content: center;
+      width: 22px;
+      max-width: 22px;
+      height: 22px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #cdbbb0;
+      border-radius: 4px;
+      background: #ffffff;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    #contact-inquiry-form .contact-captcha input[type="checkbox"]::before {
+      width: 10px;
+      height: 5px;
+      border: solid #ffffff;
+      border-width: 0 0 2px 2px;
+      content: "";
+      transform: rotate(-45deg) scale(0);
+      transition: transform 0.15s ease;
+    }
+
+    #contact-inquiry-form .contact-captcha input[type="checkbox"]:checked {
+      border-color: #49332d;
+      background: #49332d;
+    }
+
+    #contact-inquiry-form .contact-captcha input[type="checkbox"]:checked::before {
+      transform: rotate(-45deg) scale(1);
+    }
+
+    #contact-inquiry-form .contact-captcha input[type="checkbox"]:focus-visible {
+      outline: 3px solid rgba(189, 133, 131, 0.35);
+      outline-offset: 2px;
+    }
+
+    #contact-captcha-error:not(:empty) {
+      display: block;
+      margin-top: 8px;
+      color: #9b4545;
+      font-size: 12px;
+    }
+
     /* Form Footer */
 
     .form-note {
