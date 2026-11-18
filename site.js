@@ -439,4 +439,27 @@ document.querySelectorAll(".js-instagram").forEach(button => {
    OUR CAKES CATEGORY FILTER
 ======================================== */
 
-document.querySelectorAll(".filter").forEach
+const filterButtons = document.querySelectorAll(".filter");
+const cakeCards = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    const selectedFilter = button.dataset.filter;
+
+    filterButtons.forEach(filterButton => {
+      const isActive = filterButton === button;
+      filterButton.classList.toggle("active", isActive);
+      filterButton.setAttribute("aria-pressed", isActive.toString());
+    });
+
+    cakeCards.forEach(card => {
+      card.hidden =
+        selectedFilter !== "all" &&
+        card.dataset.category !== selectedFilter;
+    });
+
+  });
+
+});
