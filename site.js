@@ -114,6 +114,7 @@ const navItems = [
   ["About Us", "about.html"],
   ["Our Cakes", "cakes.html"],
   ["Gallery", "gallery.html"],
+  ["Blog", "blog.html"],
   ["Contact", "contact.html"],
   ["FAQs", "faq.html"]
 ];
@@ -217,6 +218,7 @@ if (footer) {
             <a href="about.html">Our story</a>
             <a href="cakes.html">Our cakes</a>
             <a href="gallery.html">Cake gallery</a>
+            <a href="blog.html">Blog</a>
             <a href="faq.html">FAQs</a>
             <a href="contact.html">Contact us</a>
           </div>
