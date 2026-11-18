@@ -17,23 +17,12 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebPage",
-          "@id": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html#webpage",
-          "url": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html",
-          "name": "Handcrafted Cakes for Every Celebration in Ahmedabad",
-          "description": "Discover birthday, wedding, anniversary and designer cakes in Ahmedabad.",
-          "inLanguage": "en-IN",
-          "about": {
-            "@id": "https://minaxi-cake-house.vercel.app/#bakery"
-          }
-        },
-        {
           "@type": "Bakery",
-          "@id": "https://minaxi-cake-house.vercel.app/#bakery",
+          "@id": "https://minaxi-cake-house.vercel.app/#business",
           "name": "Minaxi Cake House",
           "url": "https://minaxi-cake-house.vercel.app/",
-          "image": "https://minaxi-cake-house.vercel.app/cake.jpg",
-          "telephone": "+91-87807-01107",
+          "description": "Minaxi Cake House offers cakes for birthdays, weddings, anniversaries and special celebrations in Ahmedabad, Gujarat.",
+          "telephone": "+918780701107",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "2213/1 Bauani Pole, Raipur Chakla, Near Dwarkadhish Temple",
@@ -46,6 +35,103 @@
             "@type": "City",
             "name": "Ahmedabad"
           }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html#webpage",
+          "url": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html",
+          "name": "Cakes for Every Celebration in Ahmedabad",
+          "description": "Discover birthday cakes, wedding cakes, designer cakes and anniversary cakes at Minaxi Cake House in Ahmedabad.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://minaxi-cake-house.vercel.app/#website"
+          },
+          "about": {
+            "@id": "https://minaxi-cake-house.vercel.app/#business"
+          },
+          "mainEntity": {
+            "@id": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html#cake-service"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://minaxi-cake-house.vercel.app/#website",
+          "url": "https://minaxi-cake-house.vercel.app/",
+          "name": "Minaxi Cake House",
+          "inLanguage": "en-IN",
+          "publisher": {
+            "@id": "https://minaxi-cake-house.vercel.app/#business"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html#cake-service",
+          "name": "Cake Services in Ahmedabad",
+          "serviceType": "Celebration Cake Enquiries",
+          "provider": {
+            "@id": "https://minaxi-cake-house.vercel.app/#business"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Ahmedabad"
+          },
+          "description": "Cake options for birthdays, weddings, anniversaries and special occasions."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What types of cakes can I explore?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can explore birthday cakes, wedding cakes, designer cakes, anniversary cakes and fresh cream cakes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request a customised birthday cake in Ahmedabad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can share your preferred theme, design inspiration, flavour and celebration details through the custom order enquiry page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I enquire about cake prices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact Minaxi Cake House through the website enquiry option and share your preferred cake design, size and requirements to discuss pricing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I enquire about wedding and anniversary cakes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can share your event details and design preferences to enquire about wedding and anniversary cakes."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://minaxi-cake-house.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Ahmedabad Cakes",
+              "item": "https://minaxi-cake-house.vercel.app/ahmedabad-cakes.html"
+            }
+          ]
         }
       ]
     }
