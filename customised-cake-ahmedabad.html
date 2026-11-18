@@ -17,26 +17,12 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebPage",
-          "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#webpage",
-          "url": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html",
-          "name": "Customised Cake in Ahmedabad | Minaxi Cake House",
-          "description": "Plan a personalised eggless cake for birthdays, weddings and special occasions in Ahmedabad.",
-          "inLanguage": "en-IN",
-          "about": {
-            "@id": "https://minaxi-cake-house.vercel.app/#bakery"
-          },
-          "mainEntity": {
-            "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#service"
-          }
-        },
-        {
           "@type": "Bakery",
-          "@id": "https://minaxi-cake-house.vercel.app/#bakery",
+          "@id": "https://minaxi-cake-house.vercel.app/#business",
           "name": "Minaxi Cake House",
           "url": "https://minaxi-cake-house.vercel.app/",
-          "image": "https://minaxi-cake-house.vercel.app/cake.jpg",
-          "telephone": "+91-87807-01107",
+          "description": "Minaxi Cake House offers eggless cakes and customised cake enquiries for celebrations in Ahmedabad, Gujarat.",
+          "telephone": "+918780701107",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "2213/1 Bauani Pole, Raipur Chakla, Near Dwarkadhish Temple",
@@ -51,17 +37,125 @@
           }
         },
         {
+          "@type": "WebPage",
+          "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#webpage",
+          "url": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html",
+          "name": "Customised Cake in Ahmedabad | Minaxi Cake House",
+          "description": "Enquire about personalised eggless birthday, wedding, anniversary and designer cakes in Ahmedabad. Share your cake design and flavour preferences.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://minaxi-cake-house.vercel.app/#website"
+          },
+          "about": {
+            "@id": "https://minaxi-cake-house.vercel.app/#business"
+          },
+          "mainEntity": {
+            "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#custom-service"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://minaxi-cake-house.vercel.app/#website",
+          "url": "https://minaxi-cake-house.vercel.app/",
+          "name": "Minaxi Cake House",
+          "inLanguage": "en-IN",
+          "publisher": {
+            "@id": "https://minaxi-cake-house.vercel.app/#business"
+          }
+        },
+        {
           "@type": "Service",
-          "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#service",
-          "name": "Custom cake enquiries",
-          "serviceType": "Custom celebration cake enquiries",
+          "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#custom-service",
+          "name": "Customised Cake Service in Ahmedabad",
+          "serviceType": "Custom Cake Design and Ordering",
           "provider": {
-            "@id": "https://minaxi-cake-house.vercel.app/#bakery"
+            "@id": "https://minaxi-cake-house.vercel.app/#business"
           },
           "areaServed": {
             "@type": "City",
             "name": "Ahmedabad"
-          }
+          },
+          "description": "Customised eggless cake enquiries for birthdays, weddings, anniversaries and special occasions. Customers can share their preferred flavour, theme, size and design inspiration."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How can I order a customised cake in Ahmedabad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Visit the custom orders page, enter your contact details, celebration date, occasion, preferred flavour, number of people and design idea. Your enquiry will open in WhatsApp."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are the cakes eggless?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. All cakes prepared at Minaxi Cake House are eggless."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I share a reference photo for my cake design?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can describe your inspiration or share a reference link or design details through the custom order enquiry form."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does a customised cake cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The price depends on the selected cake size, flavour, design, decoration and customisation. The final price is shared before the order is confirmed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How early should I place my cake order?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Please place your order at least one day in advance. Detailed or customised designs may require additional preparation time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is an advance payment required?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A 50% advance payment is required to confirm and reserve the cake order."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are delivery charges included?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Delivery charges are calculated separately according to the delivery location."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://minaxi-cake-house.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Customised Cake in Ahmedabad",
+              "item": "https://minaxi-cake-house.vercel.app/customised-cake-ahmedabad.html"
+            }
+          ]
         }
       ]
     }
