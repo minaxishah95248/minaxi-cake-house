@@ -13,7 +13,7 @@ IMPORTANT BEFORE PUBLISHING
 5. In contact.html, update the Google Maps iframe URL to your exact shop location.
 
 PAGES
-Home, About Us, Our Cakes (with category filters), Gallery, Custom Orders (WhatsApp enquiry form), Contact, FAQs.
+Home, About Us, Our Cakes (with category filters), Gallery, Blog, Custom Orders (WhatsApp enquiry form), Contact, FAQs.
 
 NOTES
 - The website uses Google Fonts and Unsplash image URLs, so an internet connection is needed for those assets.
