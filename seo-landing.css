@@ -129,6 +129,34 @@
   font-size: 14px;
 }
 
+.local-blog-copy {
+  max-width: 820px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.local-blog-copy h2 {
+  margin: 38px 0 12px;
+  color: var(--ink);
+  font: 500 30px/1.2 var(--serif);
+}
+
+.local-blog-copy ul {
+  padding-left: 22px;
+}
+
+.local-blog-copy li {
+  margin: 7px 0;
+}
+
+.local-blog-copy a {
+  color: var(--ink);
+  text-decoration-color: var(--rose);
+  text-underline-offset: 3px;
+}
+
 @media (max-width: 700px) {
   .local-hero {
     grid-template-columns: 1fr;
@@ -145,5 +173,13 @@
   .local-benefits,
   .local-steps {
     grid-template-columns: 1fr;
+  }
+
+  .local-blog-copy {
+    font-size: 14px;
+  }
+
+  .local-blog-copy h2 {
+    font-size: 26px;
   }
 }
